@@ -42,8 +42,9 @@ body {
 }
 
 .main {
+    max-width: 500px;
     position: relative;
-    margin-top: 150px;
+    margin: 150px auto 0;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -161,20 +162,34 @@ body {
         margin: 0;
     }
 
-    .main {
-        margin: 0;
-        flex-direction: row-reverse;
-        width: 70%;
-        background: url("svg/bg-pattern-desktop.svg") -50px center / 40% no-repeat;
-        background-color: #fff;
+    .title {
+        font-size: 2.25em;
+        text-align: left;
     }
 
-    .title {
-        text-align: left;
+    .main {
+        height: 510px;
+        margin: 0;
+        flex-direction: row-reverse;
+        max-width: none;
+        width: 64%;
+        background:
+            url("svg/illustration-woman-online-desktop.svg") -50px center / 450px,
+            url("svg/bg-pattern-desktop.svg") -525px -300px / 100%;
+        background-color: #fff;
+        background-repeat: no-repeat;
+    }
+
+    .question__title__text {
+        font-size: 0.925em;
+    }
+
+    .text {
+        font-size: 0.9em;
     }
 
     .container-faq {
         width: 50%;
-        padding: 50px 75px 50px 0;
+        padding: 0 90px 0 15px;
     }
 }
