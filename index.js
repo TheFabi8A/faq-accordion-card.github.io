@@ -1,11 +1,11 @@
-const questions = document.querySelectorAll(".question");
+const questions = document.querySelectorAll(".container-question");
 
 questions.forEach((question) => {
   const button = question.querySelector(".question__button");
   const questionText = question.querySelector(".question__title__text");
   button.addEventListener("click", () => {
     questions.forEach((item) => {
-      if(item !== question) {
+      if (item !== question) {
         item.classList.remove("show-text");
       }
     });
@@ -14,7 +14,7 @@ questions.forEach((question) => {
 
   questionText.addEventListener("click", () => {
     questions.forEach((item) => {
-      if(item !== question) {
+      if (item !== question) {
         item.classList.remove("show-text");
       }
     });
