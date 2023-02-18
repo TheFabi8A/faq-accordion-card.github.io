@@ -151,17 +151,13 @@ body {
 
 @media screen and (min-width: 900px) {
     .fix-img {
-        outline: 2px solid blue;
-        position: absolute;
         left: -100px;
-        z-index: 10;
         width: 250px;
         height: 500px;
         background: url("svg/illustration-box-desktop.svg");
         background-position: left bottom;
         background-size: 200px;
         background-repeat: no-repeat;
-        animation: 2s ease-out 0s infinite alternate float;
     }
 
     body {
