@@ -151,7 +151,17 @@ body {
 
 @media screen and (min-width: 900px) {
     .fix-img {
-        display: none;
+        outline: 2px solid blue;
+        position: absolute;
+        left: -100px;
+        z-index: 10;
+        width: 250px;
+        height: 500px;
+        background: url("svg/illustration-box-desktop.svg");
+        background-position: left bottom;
+        background-size: 200px;
+        background-repeat: no-repeat;
+        animation: 2s ease-out 0s infinite alternate float;
     }
 
     body {
@@ -171,11 +181,11 @@ body {
         height: 510px;
         margin: 0;
         flex-direction: row-reverse;
-        max-width: none;
-        width: 64%;
+        max-width: 80%;
+        width: 925px;
         background:
-            url("svg/illustration-woman-online-desktop.svg") -50px center / 450px,
-            url("svg/bg-pattern-desktop.svg") -525px -300px / 100%;
+            url("svg/illustration-woman-online-desktop.svg") -75px center / 450px,
+            url("svg/bg-pattern-desktop.svg") -550px -290px / 100%;
         background-color: #fff;
         background-repeat: no-repeat;
     }
