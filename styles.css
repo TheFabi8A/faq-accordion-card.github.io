@@ -7,30 +7,14 @@
 }
 
 :root {
-    /* COLOURS */
-
-    /* BACKGROUND-GRADIENT */
-
     --clr-gradient-violet: hsl(273deg 75% 66%);
     --clr-gradient-blue: hsl(240deg 73% 65%);
-
-    /* PRIMARY COLOURS */
-
     --clr-primary-blue: hsl(238deg 29% 16%);
     --clr-primary-red: hsl(14deg 88% 65%);
-
-    /* NEUTRAL COLOURS */
-
     --clr-neutral-gray-200: hsl(240deg 5% 91%);
     --clr-neutral-gray-600: hsl(240deg 6% 50%);
     --clr-neutral-gray-800: hsl(237deg 12% 33%);
-
-    /* FONTS */
-
     --ff-main: "Kumbh Sans", sans-serif;
-
-    /* WIDTHS */
-    --width-card: 375px;
 }
 
 body {
@@ -38,30 +22,30 @@ body {
     background-image: linear-gradient(to top, var(--clr-gradient-blue), var(--clr-gradient-violet));
     background-color: var(--clr-gradient-blue);
     background-repeat: no-repeat;
-    margin: 25px;
+    margin: 1.5rem;
 }
 
 .main {
-    max-width: 500px;
+    max-width: 31.25rem;
     position: relative;
-    margin: 150px auto 0;
+    margin: 9.375rem auto 0;
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    border-radius: 25px;
-    box-shadow: 10px 25px 50px 10px #563ca1;
+    border-radius: 1.5rem;
+    box-shadow: 0.625rem 1.5rem 3.125rem 0.625rem #563ca1;
 }
 
 .fix-img {
     position: absolute;
     z-index: 10;
     width: 100%;
-    height: 225px;
+    height: 14rem;
     background:
-        url("svg/bg-pattern-mobile.svg") center 60px,
+        url("svg/bg-pattern-mobile.svg") center 3.75rem,
         url("svg/illustration-woman-online-mobile.svg") center top;
     background-color: transparent;
-    background-size: 250px;
+    background-size: 15.625rem;
     background-repeat: no-repeat;
     animation: 2s ease-out 0s infinite alternate float;
 }
@@ -69,7 +53,7 @@ body {
 .container-faq {
     position: relative;
     align-self: center;
-    padding: 8.5em 25px 25px;
+    padding: 8.5em 1.5rem 1.5rem;
     width: 100%;
 }
 
@@ -77,7 +61,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
     padding: 1em 0;
 }
 
@@ -89,7 +73,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
+    gap: 1rem;
     text-align: left;
     cursor: pointer;
 }
@@ -111,14 +95,14 @@ body {
 .text {
     display: none;
     font-weight: 300;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 .title {
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
 }
 
 .question__button {
@@ -141,22 +125,22 @@ body {
 
 @keyframes float {
     from {
-        top: -110px;
+        top: -6.875rem;
     }
 
     to {
-        top: -90px;
+        top: -5.625rem;
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25rem) {
     .fix-img {
-        left: -100px;
-        width: 250px;
-        height: 500px;
+        left: -6.25rem;
+        width: 15.625rem;
+        height: 31.25rem;
         background: url("svg/illustration-box-desktop.svg");
         background-position: left bottom;
-        background-size: 200px;
+        background-size: 12.5rem;
         background-repeat: no-repeat;
     }
 
@@ -169,33 +153,33 @@ body {
     }
 
     .title {
-        font-size: 2.25em;
+        font-size: 2.25rem;
         text-align: left;
     }
 
     .main {
-        height: 510px;
+        height: 31.875rem;
         margin: 0;
         flex-direction: row-reverse;
         max-width: 80%;
-        width: 925px;
+        width: 57.813rem;
         background:
-            url("svg/illustration-woman-online-desktop.svg") -75px center / 450px,
-            url("svg/bg-pattern-desktop.svg") -550px -290px / 100%;
+            url("svg/illustration-woman-online-desktop.svg") -4.688rem center / 28.125rem,
+            url("svg/bg-pattern-desktop.svg") -34.375rem -18.125rem / 100%;
         background-color: #fff;
         background-repeat: no-repeat;
     }
 
     .question__title__text {
-        font-size: 0.925em;
+        font-size: 0.925rem;
     }
 
     .text {
-        font-size: 0.9em;
+        font-size: 0.9rem;
     }
 
     .container-faq {
         width: 50%;
-        padding: 0 90px 0 15px;
+        padding: 0 5.625rem 0 1rem;
     }
 }
